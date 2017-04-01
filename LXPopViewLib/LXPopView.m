@@ -7,7 +7,12 @@
 //
 
 #import "LXPopView.h"
-#import "AppDelegate.h"
+/**
+ *  使用时请解开此注释 及对应的AppDelegate代码
+ *
+ *  @return <#return value description#>
+ */
+//#import "AppDelegate.h"
 #define MainScreenWith  [UIScreen mainScreen].bounds.size.width
 #define MainScreenHeight  [UIScreen mainScreen].bounds.size.height
 @interface LXPopView()<UIPickerViewDelegate,UIPickerViewDataSource>
@@ -156,23 +161,24 @@
 }
 - (void)LXPopViewShow
 {
-    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    _bgview = [[UIView alloc]initWithFrame:CGRectMake(0,0, MainScreenWith, MainScreenHeight)];
-    //黑层效果
-    if ([_dire isEqualToString:@"1"]||[_dire isEqualToString:@"3"]) {
-        _bgview.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
-    }else{
-    //透明
-    _bgview.backgroundColor = [UIColor clearColor];
-    }
-    [delegate.window addSubview:_bgview];
-    
-    //手势
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapBgviewClick:)];
-    tap.numberOfTapsRequired = 1;
-    _bgview.userInteractionEnabled = YES;
-    [_bgview addGestureRecognizer:tap];
-    [delegate.window addSubview:self];
+    //解开此注释 详情看demo
+//    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    _bgview = [[UIView alloc]initWithFrame:CGRectMake(0,0, MainScreenWith, MainScreenHeight)];
+//    //黑层效果
+//    if ([_dire isEqualToString:@"1"]||[_dire isEqualToString:@"3"]) {
+//        _bgview.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
+//    }else{
+//    //透明
+//    _bgview.backgroundColor = [UIColor clearColor];
+//    }
+//    [delegate.window addSubview:_bgview];
+//    
+//    //手势
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapBgviewClick:)];
+//    tap.numberOfTapsRequired = 1;
+//    _bgview.userInteractionEnabled = YES;
+//    [_bgview addGestureRecognizer:tap];
+//    [delegate.window addSubview:self];
     //
     
     //滑出效果
@@ -234,8 +240,8 @@
 }
 - (void)LXPopViewDissmiss
 {
-    AppDelegate  *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    delegate.window.backgroundColor = [UIColor whiteColor];
+//    AppDelegate  *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    delegate.window.backgroundColor = [UIColor whiteColor];
     [UIView animateWithDuration:0.358 animations:^{
         if ([_dire isEqualToString:@"1"]) {
             self.frame = CGRectMake(0, MainScreenHeight, self.frame.size.width, self.frame.size.height);
