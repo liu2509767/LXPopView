@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "be05dc49-558b-4fdd-a180-e22bbd128606++9134",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "be05dc49-558b-4fdd-a180-e22bbd128606++9134" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "be05dc49-558b-4fdd-a180-e22bbd128606++9134" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EE1CFDC6-E168-460F-B5EF-FDC554F08ED6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "be05dc49-558b-4fdd-a180-e22bbd128606++9134" : "%E5%88%98%E9%91%AB%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LXPopView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LiuXinDemo\/LXPopView\/LXPopView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/localhost\/code",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "be05dc49-558b-4fdd-a180-e22bbd128606++9134"
+    }
+  ]
+}
